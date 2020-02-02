@@ -10,6 +10,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
+    "build": "rm -rf dist/ && cp -r src/ dist/",
     "serve": "cd src/ && nodemon --exec http-server --ext html"
   },
   "devDependencies": {
