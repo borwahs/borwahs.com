@@ -1,0 +1,12 @@
+{
+  "name": "borwahs.com",
+  "version": "1.0.0",
+  "description": "personal website for rob shaw",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/borwahs/borwahs.com.git"
+  },
+  "author": "rob shaw <rob@borwahs.com>",
+  "license": "MIT",
+  "private": false
+}
