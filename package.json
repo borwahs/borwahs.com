@@ -9,6 +9,9 @@
   "author": "rob shaw <rob@borwahs.com>",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "serve": "cd src/ && nodemon --exec http-server --ext html"
+  },
   "devDependencies": {
     "http-server": "^0.12.1",
     "nodemon": "^2.0.2"
