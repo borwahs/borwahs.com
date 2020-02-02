@@ -11,6 +11,9 @@ yarn-error.log*
 # dependencies
 node_modules/
 
+# netlify
+.netlify/
+dist/
 
 ### macOS
 # general
