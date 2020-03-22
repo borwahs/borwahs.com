@@ -1,0 +1,61 @@
+::selection {
+  background-color: #40e0d0;
+  color: #fff;
+}
+
+html {
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Muli", sans-serif;
+  color: #4a4a4a;
+  line-height: 1.5;
+  font-size: 1rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin-top: 100px;
+  width: 350px;
+}
+
+.networks {
+  text-align: center;
+}
+
+.networks a {
+  display: inline-block;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.networks a svg {
+  width: 24px;
+  height: 24px;
+  fill: #000000;
+  transition: 0.5s;
+}
+
+.networks a:hover svg {
+  fill: #633a82;
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+}
