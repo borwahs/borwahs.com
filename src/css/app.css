@@ -2,9 +2,18 @@
   --text-color: #4a4a4a;
   --background-color: #f1f1f1;
   --selection-bg-color: #40e0d0;
-  --selection-color: #ffffff;
-  --icon-fill-color: #000000;
+  --selection-color: #fff;
+  --icon-fill-color: #000;
   --icon-fill-hover-color: #633a82;
+}
+
+.dark-theme {
+  --text-color: #fff;
+  --background-color: #000;
+  --selection-bg-color: #40e0d0;
+  --selection-color: #fff;
+  --icon-fill-color: #fff;
+  --icon-fill-hover-color: #40e0d0;
 }
 
 ::selection {
@@ -28,6 +37,9 @@ body {
   height: 100%;
   display: flex;
   justify-content: center;
+
+  -webkit-transition: background 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out;
 }
 
 .container {
@@ -67,4 +79,55 @@ body {
 .subtitle {
   text-align: center;
   margin-bottom: 30px;
+}
+
+.icon {
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: all 0.25s ease-in-out;
+}
+
+.icon.moon {
+  fill: transparent;
+  stroke: var(--icon-fill-color);
+}
+
+.icon.sun {
+  fill: transparent;
+  stroke: var(--icon-fill-color);
+}
+
+.toggle-container {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.toggle-theme {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+}
+
+.toggle-theme svg {
+  width: 30px;
+  height: 30px;
+}
+
+.toggle-theme:hover {
+  cursor: pointer;
+}
+
+.toggle-theme:hover .icon {
+  stroke: var(--icon-fill-hover-color);
 }
