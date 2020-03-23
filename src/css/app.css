@@ -1,19 +1,28 @@
+.light-theme {
+  --text-color: #4a4a4a;
+  --background-color: #f1f1f1;
+  --selection-bg-color: #40e0d0;
+  --selection-color: #ffffff;
+  --icon-fill-color: #000000;
+  --icon-fill-hover-color: #633a82;
+}
+
 ::selection {
-  background-color: #40e0d0;
-  color: #fff;
+  background-color: var(--selection-bg-color);
+  color: var(--selection-color);
 }
 
 html {
-  background-color: #f1f1f1;
   margin: 0;
   padding: 0;
 }
 
 body {
+  background: var(--background-color);
   margin: 0;
   padding: 0;
   font-family: "Muli", sans-serif;
-  color: #4a4a4a;
+  color: var(--text-color);
   line-height: 1.5;
   font-size: 1rem;
   height: 100%;
@@ -39,12 +48,12 @@ body {
 .networks a svg {
   width: 24px;
   height: 24px;
-  fill: #000000;
+  fill: var(--icon-fill-color);
   transition: 0.5s;
 }
 
 .networks a:hover svg {
-  fill: #633a82;
+  fill: var(--icon-fill-hover-color);
 }
 
 .title {
